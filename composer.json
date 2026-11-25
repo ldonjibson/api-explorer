@@ -1,0 +1,49 @@
+{
+    "name": "ldonjibson/api-explorer",
+    "description": "Swagger/Postman-style API explorer for Laravel: auto-scans routes, imports OpenAPI specs and Postman collections, and lets you send test requests from the browser.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/ldonjibson/api-explorer",
+    "keywords": [
+        "laravel",
+        "api",
+        "swagger",
+        "openapi",
+        "postman",
+        "documentation",
+        "debugging"
+    ],
+    "authors": [
+        {
+            "name": "ldonjibson",
+            "email": "ajibolaolayanju@mail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ldonjibson/api-explorer/issues",
+        "source": "https://github.com/ldonjibson/api-explorer"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "suggest": {
+        "symfony/yaml": "Required to import OpenAPI specs written in YAML (JSON specs work without it)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Ldonjibson\\ApiExplorer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ldonjibson\\ApiExplorer\\ApiExplorerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
